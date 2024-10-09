@@ -23,3 +23,11 @@ footer {
   width: 100%;
   bottom: 0;
 }
+.card {
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move the card up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
