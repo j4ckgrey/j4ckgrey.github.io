@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+
 }
 header {
   background: black;
@@ -13,8 +14,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9999;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 .content {
   margin-top: 60px;
@@ -25,7 +25,6 @@ body {
 }
 footer {
   text-align: center;
-  padding: 10px;
   color: white;
   position: fixed;
   width: 100%;
@@ -34,8 +33,15 @@ footer {
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.nav-item .btn {
+  width: 150px; /* Set a fixed width for buttons */
+}
+img.icon {
+  filter: brightness(0) invert(1); /* This will turn any non-black color to black */
+  width: 45px;  /* Set default width */
+  height: 45px; /* Set default height */
 }
