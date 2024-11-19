@@ -33,7 +33,11 @@ footer {
   z-index: 1000; /* Ensures the navbar stays above other content */
 }
 .nav-item .btn {
-  width: 150px; /* Set a fixed width for buttons */
+  width: 150px;
+}
+.card .btn {
+  width: 120px;
+
 }
 img.icon {
   filter: brightness(0) invert(1); /* This will turn any non-black color to black */
