@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to My Web Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+        });
+    });
+  </script>
   <link rel="stylesheet" href="styles.css"></head>
 <body>
   <header id="navbar-container">
@@ -15,6 +23,81 @@
       <img src="3.jpg" class="card-img-top d-block mx-auto" alt="..." style="object-fit: cover; width: 80%; height:auto">
     </div>
     <div class="container mt-5">
+      <p class="lh-lg fst-normal font-monospace text-center text-white fs-6">While my current experiences are not directly focused on programming, they have provided me with valuable skills that complement my development background. Through various roles, I have strengthened my problem-solving abilities, communication skills, adaptability, and leadership, all of which are crucial for working effectively in any professional environment. These diverse work experiences have allowed me to broaden my skill set and develop a well-rounded approach to tackling challenges and collaborating with teams. <br>Along with each experience, you'll find a random fact to brighten your day. Enjoy!</p>
+      <div class="card text-center my-5 bg-dark text-white border-secondary">
+        <div class="card-header border-secondary">ASM Metallbearbeitung - Wermelskirchen, Germany</div>
+        <div class="card-body">
+          <h5 class="card-title">CMM Programmer and Operator</h5>
+          <p class="card-text">
+            * Progamming on CMM verified softwares such as Zeiss Calypso.<br>
+            * Operate CMM machine to verify dimensions per manufacturing blueprint.<br>
+            * Ability to verify height gauge, using conventional methods, pins, sine, etc.<br>
+            * Review and interpret customer drawings and manufacturing procedures.<br>
+            * Work with manufacturing and engineering teams.<br>
+            * Simplify inspection methods & processes.<br>
+          </p>
+          <a tabindex="0" class="btn btn-lg btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="The First Computer" data-bs-content="The first mechanical computer, the Analytical Engine, was designed by Charles Babbage in 1837 but was never fully built during his lifetime.">Explore Fact</a>
+        </div>
+        <div class="card-footer border-secondary">Jan 2021 - Feb 2023</div>
+      </div>
+      <div class="card text-center my-5 bg-dark text-white border-secondary">
+        <div class="card-header border-secondary">Enel Green Power - Pisa, Italy</div>
+        <div class="card-body">
+          <h5 class="card-title">Call Center Agent</h5>
+          <p class="card-text">
+            Customer service and sales of electricity contracts.
+          </p>
+          <a tabindex="0" class="btn btn-lg btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="The Moon Landing" data-bs-content="On July 20, 1969, NASA's Apollo 11 mission successfully landed astronauts Neil Armstrong and Buzz Aldrin on the Moon, with Armstrong becoming the first human to walk on its surface.">Explore Fact</a>
+        </div>
+        <div class="card-footer border-secondary">Feb 2017 - Aug 2017</div>
+      </div>
+      <div class="card text-center my-5 bg-dark text-white border-secondary">
+        <div class="card-header border-secondary">0.2 Gym - Pisa, Italy</div>
+        <div class="card-body">
+          <h5 class="card-title">Customer Service Agent</h5>
+          <p class="card-text">
+            Customer service and sales of Fitness contracts.
+          </p>
+          <a tabindex="0" class="btn btn-lg btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="The Printing Press" data-bs-content="In 1440, Johannes Gutenberg invented the printing press, revolutionizing communication and making books more accessible, which helped spark the Renaissance.">Explore Fact</a>
+        </div>
+        <div class="card-footer border-secondary">Nov 2016 - Feb 2017</div>
+      </div>
+      <div class="card text-center my-5 bg-dark text-white border-secondary">
+        <div class="card-header border-secondary">Baia di Dino Resort "Villaggio club Baia di Dino"​ - San Nicola Arcella, Italy</div>
+        <div class="card-body">
+          <h5 class="card-title">Waiter / Restaurant Manager</h5>
+          <p class="card-text">
+            * Waiter tables services on a structure of 450 clients.<br>
+            * Restaurant management of a structure of 450 clients.
+          </p>
+          <a tabindex="0" class="btn btn-lg btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Heliocentric Theory" data-bs-content="In the 16th century, Nicolaus Copernicus proposed the heliocentric model of the solar system, stating that the Earth and planets revolve around the Sun, challenging the geocentric view.">Explore Fact</a>
+        </div>
+        <div class="card-footer border-secondary">Jun 2016 - Sep 2016</div>
+      </div>
+      <div class="card text-center my-5 bg-dark text-white border-secondary">
+        <div class="card-header border-secondary">Dokki Radiology Center​ - Giza, Egypt</div>
+        <div class="card-body">
+          <h5 class="card-title">Data Entry / Receptionist</h5>
+          <p class="card-text">
+            * Assisting patient's with paperwork and payments.<br>
+            * Inserting patient's data on the Center's database.<br>
+            * Assisting doctor on writing medical reports according to their diagnosis.
+          </p>
+          <a tabindex="0" class="btn btn-lg btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="First Electric Light" data-bs-content="In 1879, Thomas Edison invented the practical incandescent light bulb, marking a major breakthrough in electrical engineering and lighting technology.">Explore Fact</a>
+        </div>
+        <div class="card-footer border-secondary">May 2007 - Aug 2011</div>
+      </div>
+      <div class="card text-center my-5 bg-dark text-white border-secondary">
+        <div class="card-header border-secondary">Silital Refrigirators​ - Cairo, Egypt</div>
+        <div class="card-body">
+          <h5 class="card-title">Autocad Specialist</h5>
+          <p class="card-text">
+            * 3D/2D AutoCAD design and modify for Refrigirators​.
+          </p>
+          <a tabindex="0" class="btn btn-lg btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Einstein’s Theory of Relativity" data-bs-content="In 1915, Albert Einstein published his General Theory of Relativity, revolutionizing our understanding of gravity and the fabric of space-time.">Explore Fact</a>
+        </div>
+        <div class="card-footer border-secondary">Jun 2006 - Apr 2007</div>
+      </div>
     </div>
   </main>
   <footer id="footer-container"></footer>
